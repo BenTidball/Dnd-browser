@@ -8,4 +8,4 @@ function logTest(res){
     console.log(res);
 }
 
-const result = console.log(searchResults("races"));
+const result = console.log(searchResults("classes"));
