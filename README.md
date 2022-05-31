@@ -3,20 +3,9 @@
 
 ## Setup
 
- - create new repo on github - set up collaboration
- - collaborator clones repo
- - make development branches for each dev
- - on code editor open terminal and `git pull`
- - `npm init` - repo creator to do
- - `git init` - repo creator to do
+ - Fork and or clone repository with `git clone (cloning method)`
+ - within the command line type: `git pull` for latest update
 
-## API Setup
-
-
-## HTML Setup
-
- - create index.html file `touch index.html`
- - add boilerplate with links for js and css files. Updated title.
 
  ## Technologies
  - html
@@ -36,5 +25,8 @@
 
 
 #### index.html
+- add boilerplate with links for js and css files. Updated title.
 
 #### index.js
+- Connected frontend to backend 
+- Added event listeners to trigger api calls
