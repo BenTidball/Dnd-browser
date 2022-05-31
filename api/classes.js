@@ -1,3 +1,5 @@
+import index from "../index.js";
+
 class PlayableClass{
     constructor(json) {
         Object.assign(this, json);
@@ -21,7 +23,9 @@ async function createClassInstance(x) {
         hitDie: x.hit_die,
         startingEquipment: startEquip
     });
+
+    index(i);
     console.log(i);
 }
 
-module.exports = {PlayableClass, fetchClassInfo, createClassInstance};
+export default fetchClassInfo;

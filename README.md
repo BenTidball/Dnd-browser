@@ -18,6 +18,9 @@
  - create index.html file `touch index.html`
  - add boilerplate with links for js and css files. Updated title.
 
+ ## Technologies
+ - html
+ - js
 
 ## Changelogs
 
