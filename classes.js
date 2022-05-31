@@ -2,16 +2,7 @@ class PlayableClass{
     constructor(json) {
         Object.assign(this, json);
     }
-}
-
-async function fetchClasses() {
-    let response = await fetch('https://www.dnd5eapi.co/api/classes/');
-    let data = await response.json();
-
-    data.results.forEach(element => {
-        fetchClassInfo(element.index)
-    });
-}
+} 
 
 async function fetchClassInfo(index) {
     let response = await fetch('https://www.dnd5eapi.co/api/classes/'+index);
@@ -33,5 +24,4 @@ async function createClassInstance(x) {
     console.log(i);
 }
 
-fetchClasses();
-
+module.exports = {PlayableClass, fetchClassInfo, createClassInstance};

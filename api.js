@@ -1,11 +1,12 @@
-function searchResults(search) {
-    fetch('https://www.dnd5eapi.co/api/'+search)
-    .then(response => response.json())
-    .then(data => logTest(data))
+const playerClass = require('./classes');
+
+async function fetchClasses() {
+    let response = await fetch('https://www.dnd5eapi.co/api/classes/');
+    let data = await response.json();
+
+    data.results.forEach(element => {
+        playerClass.fetchClassInfo(element.index)
+    });
 }
 
-function logTest(res){
-    console.log(res);
-}
-
-const result = console.log(searchResults("classes"));
+fetchClasses();
