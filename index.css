@@ -3,6 +3,8 @@ body {
     flex-direction: column;
     margin: auto;
     padding: 20px;
+    font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+    font-size: 81.25%;
 }
 
 .container {
@@ -19,6 +21,11 @@ body {
     margin: auto;
 }
 
-#form {
-    
+#logo {
+    height: 92px;
+    width: 272px;
+}
+
+#formbox {
+    visibility: visible;
 }

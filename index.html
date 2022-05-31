@@ -13,16 +13,18 @@
     <main class="container">
         <section>
             <div class="logo-container">
-                <img id="logo" src="./google_logo.svg">
+                <img id="logo" src="./assets/google_logo.svg">
             </div>
-            <form id="form">
-                <div class="form-inputs">
-                <img src="./search.svg" alt="search icon">
-                    <input type="text" value="Search Google or type a URL">
-                <img src="./googlemic_clr_24px.svg" alt="search by voice command">
-                <div class="btn-group">
-                    <button onclick="">Search</button>
-                    <button onclick="">I'm feeling lucky!</button>
+            <form id="formbox">
+                <div id="inputWrapper">
+                    <input id="input" type="search" autocomplete="off" spellcheck="false" role="combobox" placeholder="Search Google or type a URL" aria-live="polite">
+                    <img id="icon" in-searchbox background-image mask-image="search.svg" src="./assets/search.svg" alt="search icon">
+                        
+                    <img src="./assets/googlemic_clr_24px.svg" alt="search by voice command">
+                        <div class="btn-group">
+                            <button onclick="">Search</button>
+                            <button onclick="">I'm feeling lucky!</button>
+                        </div>
                 </div>
             </form>
         </section>
