@@ -4,34 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="module" src="/index.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script type="module" defer src="/index.js"></script>
     <link rel="stylesheet" href="/index.css">
 
     <title>DnD Api</title>
 </head>
 <body>
-    <main class="container">
+    <main id="content" class="container">
         <section>
             <div class="logo-container">
                 <img id="logo" src="./assets/google_logo.svg">
             </div>
-            <form id="formbox">
-                <div id="inputWrapper">
-                    <input id="input" type="search" autocomplete="off" spellcheck="false" role="combobox" placeholder="Search Google or type a URL" aria-live="polite">
-                    <img id="icon" in-searchbox background-image mask-image="search.svg" src="./assets/search.svg" alt="search icon">
-                        
-                    <img src="./assets/googlemic_clr_24px.svg" alt="search by voice command">
-                        <div class="btn-group">
-                            <button id="search-btn">Search</button>
-                            <button>I'm feeling lucky!</button>
+            <form id="formbox" >
+                <div id="inputWrapper" class="input-group class="form-control-lg">
+                    <img id="search-icon" in-searchbox background-image mask-image="search.svg" src="./assets/search.svg" alt="search icon">
+                    
+                    <input id="input" type="text" class="form-control" autocomplete="off" spellcheck="false" role="combobox" placeholder="Search Google or type a URL" aria-live="polite">
+                                           
+                    <img id="mic-icon" src="./assets/googlemic_clr_24px.svg" alt="search by voice command">
+                
+                        <div class="btn-group" role="group">
+                            <button id="search-btn" class="btn btn-primary">Search</button>
+                            <button id="lucky-btn" class="btn btn-primary">I'm feeling lucky!</button>
                         </div>
-                </div>
+                    </div>
             </form>
         </section>
 
-        <section id="result-display">
+            <section id="result-display" class="resultBox">
             
-        </section>
+            </section>
     </main>
 </body>
 </html>

@@ -7,6 +7,15 @@ body {
     font-size: 81.25%;
 }
 
+#content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-width: fit-content;
+    position: relative;
+    z-index: 1;
+}
+
 .container {
     position: absolute;
     display: flex;
@@ -18,26 +27,96 @@ body {
 
 .logo-container {
     position: relative;
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin: auto;
 }
 
 #logo {
     height: 92px;
     width: 272px;
+    margin: auto;
 }
 
 #formbox {
-    visibility: visible;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 272px;
 }
 
-.resultBox{
+.input-group {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    color: #000;
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+#inputWrapper > #search-icon {
+    display: flex;
+    flex-direction: row;
+    padding-right: 30px;
+}
+
+.resultBox  {
+    padding: 20px;
     border: 2px solid black;
-    width: 50%;
-    margin-top: 20px;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
     box-shadow: 2px 2px 5px gray;
+    font-size: 1.5rem;
 }
 
 .resultBox:hover{
     box-shadow: 2px 2px 5px rgb(91, 91, 255);
+}
+
+#resultDisplay {
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+}
+
+#search-icon {
+    height: 100%;
+    left: 12px;
+    position: relative;
+    top: 0;
+}
+
+#mic-icon {
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    height: 100%;
+    outline: none;
+    padding: 0;
+    /* pointer-events: auto; */
+    position: relative;
+    margin-left: 12px;
+    width: 30px;
+}
+
+@media screen and (min-width: 500px ) {
+    body {
+        min-width: 500px;
+    }
+
+    .resultBox {
+        width: fit-content;
+        margin: auto;
+        padding: 30px;
+    }
+}
+
+.btn-group {
+    margin: 20px;
+    padding: 5px;
 }
