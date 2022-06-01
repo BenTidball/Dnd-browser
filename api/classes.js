@@ -25,7 +25,6 @@ async function createClassInstance(x) {
     });
 
     index(i);
-    console.log(i);
 }
 
 export default fetchClassInfo;
