@@ -33,5 +33,5 @@
 - Can create template result boxes to hold API data
 
 ## To do
-[] Impliment express server to allow for results to be displayed on a routed webpage
-[] Clickable results open another page to display additional information
+[x] Impliment express server to allow for results to be displayed on a routed webpage
+[x] Clickable results open another page to display additional information
