@@ -1,6 +1,7 @@
 import fetchClassInfo from "./api/api.js";
 
-const searchBtn = document.querySelector('#search-btn')
+const searchBtn = document.querySelector('#search-btn');
+const resultBoxes = document.querySelectorAll('.resultBox');
 
 searchBtn.addEventListener('click', (e)=>{
     e.preventDefault();
@@ -21,7 +22,11 @@ function resultTemplate(data){
     result.appendChild(para2);
     
     document.querySelector('#result-display').appendChild(result);
-}
 
+    result.addEventListener('click', (e) => {
+        console.log(e.currentTarget);
+        //open result in new page
+    })
+}
 
 export default resultTemplate;
