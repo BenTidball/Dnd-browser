@@ -1,6 +1,7 @@
 import fetchClassInfo from "./api/api.js";
 
 const searchBtn = document.querySelector('#search-btn')
+
 searchBtn.addEventListener('click', (e)=>{
     e.preventDefault();
     fetchClassInfo();
@@ -8,7 +9,7 @@ searchBtn.addEventListener('click', (e)=>{
 
 function resultTemplate(data){
     const result = document.createElement('div');
-    result.className = "result";
+    result.className = "resultBox";
 
     const para1 = document.createElement('p');
     const para2 = document.createElement('p');
@@ -18,15 +19,8 @@ function resultTemplate(data){
 
     result.appendChild(para1);
     result.appendChild(para2);
-
-    const custom_style={
-        border: "2px solid black",
-        width: "50%",
-        marginTop: "20px",
-    }
     
-    Object.assign(result.style,custom_style);
-    document.body.appendChild(result);
+    document.querySelector('#result-display').appendChild(result);
 }
 
 
