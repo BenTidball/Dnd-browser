@@ -12,7 +12,8 @@ body {
     display: flex;
     flex-direction: column;
     margin: auto;
-    padding: 30px;
+    padding: 2%;
+    width: 90vw;
 }
 
 .logo-container {
@@ -28,4 +29,15 @@ body {
 
 #formbox {
     visibility: visible;
+}
+
+.resultBox{
+    border: 2px solid black;
+    width: 50%;
+    margin-top: 20px;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.resultBox:hover{
+    box-shadow: 2px 2px 5px rgb(91, 91, 255);
 }
